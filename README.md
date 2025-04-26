@@ -50,9 +50,11 @@ Once the system is powered on, the LCD prompts for a password, which must be ent
 
 The potentiometer simulates throttle control. Its analog value is mapped to a speed value (0–120 km/h). Simultaneously, the alcohol sensor reads gas levels. If alcohol is detected above a set threshold (default: 500), the system:
 
-- Automatically lowers the speed limit to 30 km/h
-- Activates a red NeoPixel strip as a visual alert
-- Shows "Alcohol Detected" on the LCD
+If alcohol is detected above a threshold:
+- Speed limit drops to 30 km/h
+- NeoPixel strip glows red
+- **A 360° LED warning light turns ON** to notify nearby drivers
+- LCD displays "Alcohol Detected"
 
 The current speed is then enforced based on the lesser of the potentiometer-derived value and the active speed limit. Motor control is done via PWM output to the specified pin, reflecting the adjusted speed.
 
