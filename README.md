@@ -2,6 +2,8 @@
 
 This Arduino-based project controls a motor's speed based on alcohol detection using a gas sensor. It includes authentication, speed limit control via serial commands, visual indication using a NeoPixel strip, and a 16x2 LCD for real-time feedback.
 
+![Image](https://github.com/user-attachments/assets/a84d944a-bc98-4098-8812-039d20778bff)
+
 ## 🚀 Features
 
 - 🔐 **Password Authentication** to prevent unauthorized access
